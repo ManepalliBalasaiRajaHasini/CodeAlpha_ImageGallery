@@ -9,16 +9,15 @@ const images = [
 
 let currentIndex = 0;
 
-const galleryImage =
+const image =
 document.getElementById("galleryImage");
 
 const counter =
 document.getElementById("counter");
 
-function updateImage(){
+function updateGallery(){
 
-    galleryImage.src =
-    images[currentIndex];
+    image.src = images[currentIndex];
 
     counter.textContent =
     `${currentIndex + 1} / ${images.length}`;
@@ -32,7 +31,7 @@ function nextImage(){
         currentIndex = 0;
     }
 
-    updateImage();
+    updateGallery();
 }
 
 function prevImage(){
@@ -43,11 +42,10 @@ function prevImage(){
         currentIndex = images.length - 1;
     }
 
-    updateImage();
+    updateGallery();
 }
 
-/* Auto Slide Every 3 Seconds */
-
+/* Auto Slideshow */
 setInterval(() => {
 
     nextImage();
