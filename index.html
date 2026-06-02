@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Image Gallery</h1>
+
+    <div class="gallery">
+
+        <button class="btn" onclick="prevImage()">❮</button>
+
+        <img
+            id="galleryImage"
+            src="images/img1.jpg"
+            alt="Gallery Image"
+        >
+
+        <button class="btn" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <div class="info">
+        <p id="counter">1 / 6</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
